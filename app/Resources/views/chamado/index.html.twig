@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+		<div class="jumbotron">
+			<div class="container">
+				<div class="page-header">
+					<h2><span class="glyphicon glyphicon-home"></span>&nbsp;Formulário</h2>
+					<!--<hr />-->
+					<p class="text-success"><strong>Cadastro de Chamados - SAC </strong></p>
+				</div>
+			</div>
+		</div>
+<table width="50%" style="margin:0px auto">
+<tr><td>		
+{{ form_start(form) }}
+
+<div>
+{{ form_label(form.titulo) }}
+{{ form_errors(form.titulo) }}
+{{ form_widget(form.titulo) }}
+</div>
+
+<div>
+{{ form_label(form.observacao) }}
+{{ form_errors(form.observacao) }}
+{{ form_widget(form.observacao, {'attr': {'class': 'campo_obs'}}) }}
+</div>
+
+<div>
+{{ form_label(form.dataAbertura) }}
+{{ form_errors(form.dataAbertura) }}
+{{ form_widget(form.dataAbertura) }}
+</div>
+
+{{ form_end(form) }}
+</td></tr></table>
+{{ form.vars.value.observacao }}
+
+{% endblock %}

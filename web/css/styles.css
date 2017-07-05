@@ -1,0 +1,94 @@
+html,body{margin:0;padding:0;background-image: url(../img/bgForm.png);}
+body{
+	font: 76% Merriweather Sans,sans-serif;
+	text-align:center;
+	/*background-image: url(../img/bgaspero2_.png);*/
+}
+/*body{background: url(../img/bg140416.png) fixed no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}*/
+p{margin:0 10px 10px}
+fieldset{border-width:1px; border-color:#eeeeee; /*margin:0px 0px 50px 0px;*/width:60%;margin:0px auto;background-image: url(../img/bgForm.png);}
+a{padding:5px; text-decoration:none; color:#000000;}
+div#header{background-image: url(../img/bgBotaoAzul.jpg);height:35px;border-bottom:1px solid #ffffff;}
+/*div#header{background: rgba(0, 0, 0, 0.5);}
+div#header{background: url(../img/bg150216.png) fixed no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}*/
+div#header h1{height:40px;line-height:80px;margin:0;padding-left:10px;padding-top:10px;border-bottom:0px solid rgba(0, 0, 0, 0.5);}
+div#container{text-align:left}
+div#content p{line-height:1.4; font-family:Armata, Arial, Verdana; text-align:justify;}
+div#content h2{font-family:Oswald,Questrial, Arial, Verdana; font-weight:bold; font-size:28px}
+/*div#navigation{background:#F6F0E0;}
+div#navigation ul{margin:15px 0; padding:0; list-style-type:none;}
+div#navigation li{margin-bottom:5px;}
+div#extra{background:#CCC8B3;}*/
+.cabecalho{color:#ffffff; font-family:Armata,sans-serif,verdana;/*margin:15px;*/ margin:5px;}
+div#divCabecalho{background-image:url(../img/bgCinza.png);width:100%; /*padding:30px 0px;*/ padding:5px 0px 55px 0px;border-bottom:0px solid #6C6C62}
+div#footer{
+background:#eeeeee;
+-moz-box-shadow:rgba(0, 0, 0, 0.4) 0 0 10px;
+-webkit-box-shadow:rgba(0, 0, 0, 0.4) 0 0 10px;
+box-shadow:rgba(0, 0, 0, 0.4) 0 0 10px;
+background-image:url(../img/bgAzul.png);
+/*background-image: url(../img/aspero2_.png);*/
+padding:15px 0px;
+color:#000000;
+/*color:#FFFFFF;*/
+}
+div#footer div#extra h3{
+	color:#000000;
+	font-family: Merriweather Sans,sans-serif;
+	text-align:left;
+	font-weight:bold;
+	font-size:1.17em;
+	margin-left:0px;
+}
+div#footer div#extra td{
+	text-align:left;
+}
+
+/*div#footer{background: rgba(0, 0, 0, 0.5);}*/
+div#footer p{margin:0;padding:25px 10px}
+div#container{width:100%;margin:0px auto;}
+div#containerHead{width:100%; margin:0px auto;/*background-image:url(../img/logocopyMini.png);height:55px;*/ background-repeat:no-repeat}
+div#menu_container{margin:0px auto;width:100%;/*background-image:url(../img/bg.png)*/}
+div#menu_centralizar{margin:0px 0px 0px 0px;/*width:100%;*/ }
+/*div#content{float:left;width:600px;padding:10px}*/
+div#content{/*float:left;*/
+	width:80%;
+	padding:0px 0px;
+	margin:10px auto;
+	/*position: inherit;*/
+	
+}
+div#content fieldset{border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;border-color:#74bfb5;color:#347f75;}
+div#form fieldset, fieldset#loginForm{border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;border-color:#74bfb5;}
+tr.linhaLabel{font-size:10px;}
+div#content fieldset legend.ui-widget-header, fieldset#loginForm legend{background:#74bfb5;padding:10px;font-family:Armata, sans-serif, verdana}
+div#form fieldset legend.ui-widget-header{background:#74bfb5;padding:10px;font-family:Armata, sans-serif, verdana}
+div#navigation{float:right;width:180px;}
+div#extra{/*float:left;*/width:70%;margin:5px auto; clear:both;}
+div#footer{clear:both;width:100%}
+div#form{/*float:left;*/ position:relative; /*width:40%;margin:10px;*/margin:0px auto;width:70%; background-image:inherit;padding:5px;}
+#form.frmLeft{float:left; position:relative; width:40%;margin:10px;/*margin:0px auto;width:70%;*/ background-image:inherit;padding:5px;}
+div#form fieldset{width:100%;}
+fieldset#loginForm{width:300px; color:#448fb5;/*font-weight:bold;*/}
+fieldset#loginForm a{color:#275997;font-family:Merriweather Sans, Verdana, Arial;}
+fieldset#loginForm dl{margin:10px auto;width:70%;}
+fieldset.formConf{width:350px;}
+div#form fieldset.formConf{width:300px;}
+div#instrucoes{float:left; width:40%; margin:10px; position:relative;background-image:inherit;}
+div#instrucoes ul li{margin:5px; font-family:Merriweather Sans, Arial, Helvetica, sans-serif; color:#444}
+#footer p#paragrafoMinimo{margin:0px; padding:0px;}
+#footer p#paragrafoMinimo a#atalhoTopo{margin:10px; padding:10px; border:1px solid #449fb5; color:#FFFFFF; font-weight:bold; background-image:url(../img/bgBotaoAzul.jpg)}
+button, input[type=submit]{background-image:url(../img/botaoAzul.jpg); height:39px;color:#ffffff;padding:5px 15px;}
+select{min-width:80px;}
+p.tituloGrafico{margin:0px auto; font-size:24px; width:120px; margin-top:10px; color:#275997; font-family:Merriweather Sans, Arial, Verdana;}
+h2.nomeGrafico{margin:0px auto; color:#74bfb5;margin-left:150px;font-size:24px;margin-bottom:10px;margin-top:15px;}
+hr.divisoriaGraficos{
+	border-width: 1px; 
+	height: 2px;
+	width:90%;
+	margin:0px auto;
+	/*border-top-width: 1px;*/
+	}
+	
+#chart1,#chart2,#placeholder,#placeholder2{width:70%;height:500px; margin:0px auto;}
+div#userbox{margin-top:20px;}

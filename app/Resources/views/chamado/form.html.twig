@@ -1,0 +1,111 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+		<div class="jumbotron" style="border-bottom:3px solid #111">
+			<div class="container">
+				<div class="page-header">
+					<h2><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Formulário</h2>
+					<!--<hr />-->
+					<p><strong>Cadastro de Chamados - SAC </strong></p>
+				</div>
+			</div>
+		</div>
+<div class="container">
+      <!-- Example row of columns -->
+	  <div class="form-group">
+		{% for flash_message in app.session.flashBag.get('Aviso') %}
+			<div class="flash-Aviso">
+				<div class="alert alert-success alert-dismissable">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					<p class="text-success"><strong>{{ flash_message }}</strong></p>
+				</div>
+			</div>
+		{% endfor %}
+	  </div>
+		{{ form_start(form) }}
+		{{ form_errors(form) }}
+<div class="form-group">
+     <div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+		{{ form_label(form.nome) }}
+		{{ form_widget(form.nome) }}
+		</div>
+		<div class="col-md-3">
+		{{ form_errors(form.nome) }}
+		</div>
+	</div>
+</div>
+<div class="form-group">
+     <div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-3">
+		{{ form_label(form.email) }}
+		{{ form_widget(form.email) }}
+		</div>
+		<div class="col-md-2">
+		{{ form_label(form.pedido_id) }}
+		{{ form_widget(form.pedido_id) }}
+		</div>
+		<div class="col-md-1">
+		{{ form_errors(form.pedido_id) }}
+		</div>
+		<div class="col-md-2">
+		{{ form_errors(form.email) }}
+		</div>
+	</div>
+</div>
+<div class="form-group">
+     <div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+		{{ form_label(form.titulo) }}
+		{{ form_widget(form.titulo) }}
+		</div>
+		<div class="col-md-3">
+		{{ form_errors(form.titulo) }}
+		</div>
+	</div>
+</div>
+<div class="form-group">
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+		{{ form_label(form.observacao) }}
+		{{ form_widget(form.observacao) }}
+		</div>
+		<div class="col-md-3">
+		{{ form_errors(form.observacao) }}
+		</div>
+	</div>	
+</div>	
+<div class="form-group">
+	<div class="row">
+		<div class="col-md-3"></div>
+		
+		<div class="col-md-2">
+		{{ form_widget(form.save) }}
+		</div>
+		<div class="col-md-3">
+		
+		</div>
+	</div>
+</div>	
+<div class="form-group">
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+		{{ form_widget(form.save) }}
+		</div>
+		<div class="col-md-3">
+		</div>
+		
+	</div>
+</div>	
+</div>
+{{ form_end(form) }}
+
+
+
+{% endblock %}

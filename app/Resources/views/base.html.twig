@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Serviço de Atendimento ao Consumidor (SAC){% endblock %}</title>
+        {% block stylesheets %}
+		
+			<link href="{{ asset('css/960.css') }}" rel="stylesheet" />
+			<!--<link href="{{ asset('css/template.css') }}" rel="stylesheet" />-->
+			<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
+			<link href="{{ asset('css/jquery-ui.min.css') }}" rel="stylesheet" />
+			<link href="{{ asset('css/jumbotron.css') }}" rel="stylesheet" />
+			
+		{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+			  <div class="container">
+				<div class="navbar-header">
+			   
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <!--<a class="navbar-brand" href="#">Project name</a>-->
+				   <img class="navbar-btn" src="{{ asset('images/tele1.png') }}" height="30" width="30" />
+				  <a class="navbar-brand" href="#">SAC</a>
+				  
+				</div>
+				
+				 <!-- Static navbar -->
+			  
+				<div class="container-fluid">
+				  <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					  <span class="sr-only">Toggle navigation</span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					</button>
+					
+				  </div>
+				  <div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-right navbar-nav">
+					  <li><a href="/">Home</a></li>
+					  <li><a href="/chamado/criar">Abrir Chamado</a></li>
+					  <li><a href="/chamado/listar">Chamados Abertos</a></li>
+					  
+					</ul>
+					
+				  
+					
+					</div><!--/.navbar-collapse -->
+				
+					</div><!--container fluid/. -->
+				</div><!--container -->
+			</nav>
+		
+		
+		
+		
+        {% block body %}{% endblock %}
+	<hr />
+   
+  </div>
+		{% block javascripts %}
+			
+			<script type='text/javascript' src="{{ asset('javascript/jquery-2.0.3.min.js') }}" />
+			<script type='text/javascript' src="{{ asset('javascript/jquery-ui.min.js') }}" />
+			<script type='text/javascript' src="{{ asset('javascript/bootstrap.min.js') }}" />
+			<script type='text/javascript' src="{{ asset('javascript/default.js') }}" />
+		{% endblock %}
+    </body>
+</html>

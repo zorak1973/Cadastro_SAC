@@ -1,0 +1,25 @@
+/* CSS Document */
+.CSSTableGenerator table, .CSSTableGenerator{
+width:100%;
+height:100%;
+margin:0px;padding:0px;
+}
+
+.CSSTableGenerator td{
+vertical-align:middle;
+	
+/*background-color:#ffffff;*/
+border:1px solid #aaa;
+border-width:0px 1px 1px 0px;
+text-align:left;
+padding:7px;
+font-size:11px;
+font-family:Merriweather Sans, Arial;
+font-weight:normal;
+color:#000000;
+}
+
+tr#firstLine td, tr#firstline:hover td{background-image:url(../img/bgAzul.png);font-size:14px;color:#222;}
+
+.CSSTableGenerator tr:hover{background-color:#275997; color:#fff;}
+.CSSTableGenerator tr:hover td{color:#fff;}
